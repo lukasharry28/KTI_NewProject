@@ -1,0 +1,17 @@
+@{
+    
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>learn Secure Web With Erick Kurniawan ASP.NET MVC.</p>
+<p>Username: @ViewBag.username</p>
+<p>Fruits:
+    @foreach (var fruits in ViewBag.fruits){
+        <li>@fruits</li>
+    }
+</p>
+<p>Animal:
+    @foreach (var animal in ViewBag.animal){
+        <li>@animal</li>
+    }
+</p>
