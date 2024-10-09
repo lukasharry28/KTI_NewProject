@@ -1,0 +1,19 @@
+﻿@model IEnumerable<SecureWeb.Models.Student>
+
+<h2>Student</h2>
+
+<table class="table table-striped">
+    <tr>
+        <td>Nim</td>
+        <td>Nama</td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.nim</td>
+            <td>@item.name</td>
+        </tr>
+    }
+</table>
+
+<a asp-controller="Student" asp-action="Create" class="btn btn-primary btn-sm">Add</a>
