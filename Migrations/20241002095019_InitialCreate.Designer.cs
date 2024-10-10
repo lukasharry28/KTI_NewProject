@@ -10,7 +10,7 @@ using SecureWeb.Data;
 namespace SecureWeb.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241010041914_InitialCreate")]
+    [Migration("20241002095019_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -31,24 +31,6 @@ namespace SecureWeb.Migrations
                     b.HasKey("nim");
 
                     b.ToTable("Students");
-                });
-
-            modelBuilder.Entity("SecureWeb.Models.User", b =>
-                {
-                    b.Property<string>("Username")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Role")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Username");
-
-                    b.ToTable("Users");
                 });
 #pragma warning restore 612, 618
         }

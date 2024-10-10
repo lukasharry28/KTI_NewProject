@@ -5,23 +5,11 @@
 namespace SecureWeb.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class Table_User : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
-                name: "Students",
-                columns: table => new
-                {
-                    nim = table.Column<string>(type: "TEXT", nullable: false),
-                    name = table.Column<string>(type: "TEXT", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Students", x => x.nim);
-                });
-
             migrationBuilder.CreateTable(
                 name: "Users",
                 columns: table => new
@@ -39,9 +27,6 @@ namespace SecureWeb.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "Students");
-
             migrationBuilder.DropTable(
                 name: "Users");
         }

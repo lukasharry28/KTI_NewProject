@@ -256,3 +256,4 @@ D:\UKDW 2022\Semester 5\Program\KTI_2024\SecureWeb\obj\Debug\net8.0\refint\Secur
 D:\UKDW 2022\Semester 5\Program\KTI_2024\SecureWeb\obj\Debug\net8.0\SecureWeb.pdb
 D:\UKDW 2022\Semester 5\Program\KTI_2024\SecureWeb\obj\Debug\net8.0\SecureWeb.genruntimeconfig.cache
 D:\UKDW 2022\Semester 5\Program\KTI_2024\SecureWeb\obj\Debug\net8.0\ref\SecureWeb.dll
+D:\UKDW 2022\Semester 5\Program\KTI_2024\SecureWeb\obj\Debug\net8.0\SecureWeb.sourcelink.json
