@@ -2,9 +2,11 @@ using System;
 using Microsoft.AspNetCore.Mvc;
 using SecureWeb.Data;
 using SecureWeb.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace SecureWeb.Controllers;
 
+[Authorize]
 public class StudentController : Controller
 {
     private readonly IStudent _studentData;

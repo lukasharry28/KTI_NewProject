@@ -10,8 +10,8 @@ public class RegistrationViewModell
 
     [Required]
     [DataType(DataType.Password)]
-    //[MinLength(12, ErrorMessage = "Password must be at least 12 characters long")]
-    //[RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$", ErrorMessage = "Password must contain at least one uppercase letter, one lowercase letter, and one number.")]
+    [MinLength(12, ErrorMessage = "Password must be at least 12 characters long")]
+    [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$", ErrorMessage = "Password must contain at least one uppercase letter, one lowercase letter, and one number.")]
     public string? Password { get; set; }
 
     [Required]
